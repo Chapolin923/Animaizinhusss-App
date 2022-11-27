@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".despertador">
+
+
+
+
+
+    <TextView
+        android:id="@+id/nome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alterar"
+        android:text="Animal 1"
+        android:layout_marginTop="60dp" />
+    <TextView
+        android:id="@+id/cuidado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome1"
+        android:text="cuidado 1: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado1"
+        android:text="cuidado 2: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado2"
+        android:text="cuidado 3: "
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/excluir_cuidado1"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado1"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado1"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado1"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/excluir_cuidado2"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado2"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado2"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado2"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/excluir_cuidado3"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado3"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado3"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado3"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_animal1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="adicionar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado3"
+        app:layout_constraintEnd_toStartOf="@+id/alterar_animal1"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/alterar_animal1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="alterar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/criar_animal1" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/nome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criar_animal1"
+        android:text="Animal 2"
+        android:layout_marginTop="80dp" />
+    <TextView
+        android:id="@+id/cuidado21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome2"
+        android:text="cuidado 1: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado21"
+        android:text="cuidado 2: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado22"
+        android:text="cuidado 3: "
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/excluir_cuidado21"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado21"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado21"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado21"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cuidado21" />
+    <Button
+        android:id="@+id/excluir_cuidado22"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado22"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado22"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado22"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado22"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado22"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/excluir_cuidado23"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado23"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado23"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado23"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado23"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado23"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_animal2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="adicionar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado23"
+        app:layout_constraintEnd_toStartOf="@+id/alterar_animal2"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/alterar_animal2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="alterar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/criar_animal2" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/nome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criar_animal2"
+        android:text="Animal 3"
+        android:layout_marginTop="80dp" />
+    <TextView
+        android:id="@+id/cuidado31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome3"
+        android:text="cuidado 1: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado31"
+        android:text="cuidado 2: "
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/cuidado33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado32"
+        android:text="cuidado 3: "
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/excluir_cuidado31"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado31"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado31"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado31"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado31"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado31"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/excluir_cuidado32"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado32"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado32"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado32"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado32"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado32"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/excluir_cuidado33"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado33"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado33"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_cuidado33"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cuidado33"
+        app:layout_constraintBottom_toBottomOf="@+id/cuidado33"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/criar_animal3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="adicionar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado33"
+        app:layout_constraintEnd_toStartOf="@+id/alterar_animal3"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/alterar_animal3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="alterar"
+        app:layout_constraintTop_toBottomOf="@+id/cuidado33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/criar_animal3" />
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/webview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icone_sair"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <ImageButton
+        android:id="@+id/alterar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icone_perfil"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <ImageButton
+        android:id="@+id/webview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/voltar"
+        app:layout_constraintStart_toEndOf="@+id/alterar"
+        app:srcCompat="@drawable/icone_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".alterar_animal3"
+            android:exported="false" />
+        <activity
+            android:name=".alterar_animal2"
+            android:exported="false" />
+        <activity
+            android:name=".alterar_animal"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados9"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados8"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados7"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados6"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados5"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados4"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados3"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cuidados2"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_animal3"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_animal2"
+            android:exported="false" />
+        <activity
+            android:name=".escolha"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cadastro_cuidados"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cadastro_animal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".visualizacao_dados_user"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".alterar_dados"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".webview"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".despertador"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cadastro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
